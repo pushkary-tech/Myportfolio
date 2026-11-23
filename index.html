@@ -17,7 +17,6 @@
             body{
                 background: linear-gradient(0deg,#0e06fa,#06e6ff,#b5c6e0);
                 animation: fade-in 1.5s ease-in-out;
-                
             }   
              @keyframes fade-in{
                 from{
@@ -48,14 +47,20 @@
              }
             .meabout{
                 display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
                 margin: 20px;
                     animation:fadein 1s ease-in-out 1;
                 }
                 .myimage{
-                    width: 50%;
+
+                    padding: 2px;
+                    overflow:hidden;
+                    width: 30%;
                     height:350px;
                     animation:fadein 1s ease-in-out 1;
-                    
+                    box-shadow: ;
                 }
 
                 .intro{
@@ -82,6 +87,7 @@
                     margin:20px 10px;
                     border-radius: 10px;
                     padding:5px;
+                    overflow: hidden;
 
                 }
                 .h1{
@@ -103,6 +109,7 @@
                     border-radius: 10px;
                     padding:10px;
                     animation:fadein 1s ease-in-out 1;
+                    overflow: hidden;
                 }
                 .sports{
                     background-color: aliceblue;
@@ -158,23 +165,45 @@
                 }
                 .myimage img{
                     width: 100%;
-                
-                    border-radius: 20px;
-                    height: 350px;
-                    box-shadow:0 0 10px rgb(246, 247, 248);
+                     border-radius: 20px;
+                    height: 100%;
+                    object-position:center ;
+                    object-fit:contain;
+                    display: block;
+                    box-shadow:0px 8px 20px rgb(246, 247, 248);
                     background-color: aqua;
                 }
                 .goofyahhimage{
                     height:156px;
                     width:156px;
-                    border-radius: 50px;
+                    border-radius: 05px;
                     display: block;
                     margin: auto;
+                    overflow: hidden;
+                    
                   
                 }
                 .goofyahhimage img{
                     width: 100%;
-                    overflow: hidden;
+                    display:block ;
+                }
+                .musical img{
+                    width: 100%;
+                    border-radius: 10px;
+                    margin: 10px;
+                    display: block;
+                }
+                .awards img{
+                    display: block;
+                    margin: 10px auto;
+                    width: 60%;
+                    border: 2px solid rgb(13, 67, 182);
+                    box-shadow: 0 0 10px cadetblue;
+                }
+                p{
+                    padding: 10px;
+                    font-size: 20px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 }
              
         </style>
@@ -281,7 +310,7 @@ I know two languages, Telugu and English
                
                 <div class="imgofmusic">
                     <h1>musical journey</h1>
-                    <img src="" alt="musical journey">
+                    <img src="devaansh (6).jpg" alt="musical journey">
                 </div>
                 <div>
                  <p>
@@ -309,10 +338,10 @@ I know two languages, Telugu and English
             </div>
             <div id="awards" class="awards">
                 <h1>awards</h1>
-                <img src="" alt="a1">
-                <img src="" alt="a2">
-                <img src="" alt="a3">
-                <img src="" alt="a4">
+                <img src="dc (1).png" alt="a1">
+                <img src="dc (2).png" alt="a2">
+                <img src="dc4.png" alt="a3">
+                
             </div>
             <div id="places" class="travel">
                 <h1>travel</h1>
@@ -320,7 +349,37 @@ I know two languages, Telugu and English
                    I have been to bahamas,bermuda,france,belgium,dutch,india,sri lamka,italy,iceland,mexico.canada,and costa rica 
                 </p>
             </div>
+ `           <div id="coding" class="travel">
+                <h1>coding</h1>
+                <p>
+                  my coolest coding creations
+                </p>
+                <div class="card">
+                    <img src="game (5).png" alt="pacman">
+                    <button>>take me to the game</button>
 
+                </div>
+                <div class="card">
+                    <img src="game (4).png" alt="pong">
+                    <button>>take me to the game</button>
+
+                </div>
+                <div class="card">
+                    <img src="game (3).png" alt="truth or dare">
+                    <button>>take me to the game</button>
+
+                </div>
+                <div class="card">
+                    <img src="game (2).png" alt="snake">
+                    <button>>take me to the game</button>
+
+                </div>
+                <div class="card">
+                    <img src="game (1).png" alt="geo">
+                    <button onclick="url(https://scratch.mit.edu/projects/1203083917/)">take me to the game</button>
+
+                </div>
+            </div>
         </main>
         <footer>
             
